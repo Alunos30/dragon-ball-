@@ -1,0 +1,14 @@
+CREATE TABLE dark shadow (
+  jogador_id INT PRIMARY KEY,
+  dark `shadow VARCHAR(100),
+  gamertag VARCHAR(50) 
+);
+ 
+ CREATE TABLE progresso (
+   progresso_id INT PRIMARY KEY,
+   adam_id INT,
+   descricao VARCHAR(255),
+   data_progresso DATE,
+   FOREIGN KEY (adam_id)                                            REFERENCES jogadores(adam_id) 
+);
+  
